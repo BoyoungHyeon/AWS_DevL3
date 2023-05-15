@@ -24,7 +24,7 @@ public class DeliveryController {
         produces = "application/json;charset=UTF-8"
     )
     public Delivery completeDelivery(
-        @PathVariable(value = "id") String id,
+        @PathVariable(value = "id") Long id,
         @RequestBody CompleteDeliveryCommand completeDeliveryCommand,
         HttpServletRequest request,
         HttpServletResponse response
